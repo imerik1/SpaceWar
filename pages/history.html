@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space War</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body onload="typeWriter()">
+    <div class="app">
+      <h1 id="history"></h1>
+    </div>
+    <script>
+      var i = 0;
+      var txt = "Olá jovem guerreiro, contamos com você"; /* The text */
+      var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+      function typeWriter() {
+        if (i === txt.length) {
+          setTimeout(() => {
+            window.open("./game.html", "_self");
+          }, 4000);
+        } else if (i < txt.length) {
+          document.getElementById("history").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+  </body>
+</html>

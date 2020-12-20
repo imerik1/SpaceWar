@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.astronautGabriel .astronaut {
+  position: fixed;
+  right: 5%;
+  bottom: 13%;
+  max-width: 45rem;
+  min-width: 25rem;
+}
+
+.astronautGabriel .arm-left {
+  -webkit-animation: armSwipe 5s 1s infinite ease-in-out;
+          animation: armSwipe 5s 1s infinite ease-in-out;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+}
+
+@-webkit-keyframes armSwipe {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+@keyframes armSwipe {
+  0% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-10deg);
+            transform: rotate(-10deg);
+  }
+}
+
+.astronautGabriel .arm-right {
+  -webkit-animation: armRightSwipe 5s 1s infinite ease-in-out;
+          animation: armRightSwipe 5s 1s infinite ease-in-out;
+  -webkit-transform-origin: right top;
+          transform-origin: right top;
+}
+
+@-webkit-keyframes armRightSwipe {
+  0% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+@keyframes armRightSwipe {
+  0% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+  50% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  }
+  100% {
+    -webkit-transform: rotate(-1deg);
+            transform: rotate(-1deg);
+  }
+}
+
+.astronautGabriel .astronaut {
+  width: 50%;
+  height: auto;
+  overflow: visible;
+  -webkit-animation: Levitation 5s 1s infinite ease-in-out;
+          animation: Levitation 5s 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes Levitation {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  50% {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+@keyframes Levitation {
+  0% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  50% {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+  100% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+}
+
+.astronautGabriel .leg-right {
+  -webkit-animation: LegSwipe 5s 1s infinite ease-out;
+          animation: LegSwipe 5s 1s infinite ease-out;
+  -webkit-transform-origin: left bottom;
+          transform-origin: left bottom;
+}
+
+@-webkit-keyframes LegSwipe {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+@keyframes LegSwipe {
+  0% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  }
+  100% {
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+}
+
+@-webkit-keyframes LegLeftSwipe {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+@keyframes LegLeftSwipe {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+}
+
+.astronautGabriel .reflect {
+  -webkit-animation: faceOpacity 5s 1s infinite;
+          animation: faceOpacity 5s 1s infinite;
+}
+
+@-webkit-keyframes faceOpacity {
+  0% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes faceOpacity {
+  0% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+
+.astronautGabriel .eye-right {
+  -webkit-animation: eyeBlink 5s infinite step-start 0s;
+          animation: eyeBlink 5s infinite step-start 0s;
+}
+
+.astronautGabriel .eye-left {
+  -webkit-animation: eyeLeftBlink 5s infinite step-start 0s;
+          animation: eyeLeftBlink 5s infinite step-start 0s;
+}
+
+@-webkit-keyframes eyeBlink {
+  90% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(135px) scaleY(0);
+            transform: translateY(135px) scaleY(0);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@keyframes eyeBlink {
+  90% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(135px) scaleY(0);
+            transform: translateY(135px) scaleY(0);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@-webkit-keyframes eyeLeftBlink {
+  90% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(155px) scaleY(0);
+            transform: translateY(155px) scaleY(0);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+@keyframes eyeLeftBlink {
+  90% {
+    -webkit-transform: none;
+            transform: none;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(155px) scaleY(0);
+            transform: translateY(155px) scaleY(0);
+  }
+  100% {
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+}
+
+.painel {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 20rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 6rem;
+}
+
+.painel button {
+  margin-top: 2rem;
+  padding: 0.6rem 8rem;
+  -webkit-box-shadow: 0 0 0 0;
+          box-shadow: 0 0 0 0;
+  outline: 0;
+  border: none;
+  border-radius: 1.6rem;
+  font-weight: 700;
+  background: white;
+  color: #222222;
+  cursor: pointer;
+}
+
+.painel button:hover,
+.painel button :visited,
+.painel button :active :focus {
+  border: none;
+  color: #9b1b1b;
+}
+
+.painel h1,
+.painel h2 {
+  text-align: center;
+  max-width: 100vw;
+  font-family: "Press Start 2P", cursive;
+}
+
+.painel h1 {
+  color: white;
+  font-size: 8rem;
+}
+
+.painel h2 {
+  margin: 2rem 0 8rem;
+  font-size: 2rem;
+  color: #af1d1d;
+}
+
+.painel .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 2rem;
+}
+
+.painel .socialMedia a img {
+  margin-top: 1.8rem;
+  width: 4rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.painel .socialMedia a img:hover {
+  -webkit-animation: rotate 1s forwards;
+          animation: rotate 1s forwards;
+}
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+}
+
+@keyframes rotate {
+  to {
+    -webkit-transform: rotate(-30deg);
+            transform: rotate(-30deg);
+  }
+}
+
+#history {
+  font-size: 8rem;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+@media screen and (max-width: 1120px) {
+  * {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  * {
+    font-size: 40%;
+  }
+}
+
+html,
+body {
+  background: url("../assets/background-start.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position-x: 0%;
+  min-height: 100vh;
+  max-width: 100vw;
+  overflow-x: hidden;
+  -webkit-animation: rotativeBackground 60s infinite;
+          animation: rotativeBackground 60s infinite;
+}
+
+.app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  max-height: 100vh;
+  padding: 8rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes rotativeBackground {
+  to {
+    background-position-x: 100%;
+  }
+}
+
+@keyframes rotativeBackground {
+  to {
+    background-position-x: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
